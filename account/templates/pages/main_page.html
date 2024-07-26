@@ -6,4 +6,6 @@
 {% block content %}
 <p>Некая информация о пользователе</p>
 {{ name }}
+
+<p><a href ="{% url "logout" %}">Выйти из системы</a></p>
 {% endblock content %}

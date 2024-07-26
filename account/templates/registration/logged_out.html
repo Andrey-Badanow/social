@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+
+{% block title %}Покинул чат{% endblock title %}
+{% block content %}
+
+<p>Вы успешно вышли из своей учетной записи,</p>
+<p>Но в любой момент можете <a href ="{% url "login" %}">войти</a> снова</p>
+{% endblock content %}
