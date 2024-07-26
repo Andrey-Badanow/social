@@ -36,6 +36,8 @@ LOGIN_REDIRECT_URL = 'main_page'
 LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 INSTALLED_APPS = [
     'account.apps.AccountConfig',
     'django.contrib.admin',

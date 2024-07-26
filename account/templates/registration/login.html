@@ -12,7 +12,7 @@
 {% endif %}
 
 <div class="enter_form">
-    <form method="post">
+    <form method="post" action="{% url "login" %}">
         {{ form.as_p }}
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}"/>
