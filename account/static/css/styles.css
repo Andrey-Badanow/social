@@ -1,0 +1,43 @@
+
+*{
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+}
+
+#exit{
+    float: right;
+}
+
+li{
+    display: inline;
+    padding: 10px;
+}
+.menu{
+    height: 20px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    background: rgb(158, 231, 21);
+}
+a{
+    width: 50%;
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+
+a:hover{
+    color: rgb(233, 16, 16);
+}
+.base_text{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    color: rgb(175, 108, 7);    
+}
+p{
+    padding: 10px;
+}
+input{
+    padding-left: 20px;
+    margin-left: 10px;
+}
