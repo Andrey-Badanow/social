@@ -17,6 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from account import views
+from django.contrib.auth.views import PasswordResetView
 
 
 urlpatterns = [

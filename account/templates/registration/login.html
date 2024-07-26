@@ -12,12 +12,12 @@
 {% endif %}
 
 <div class="enter_form">
-    <form method="post">
+    <form method="post" action="{% url "login" %}">
         {{ form.as_p }}
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}"/>
         <input type="submit" value="Войти"/>
     </form>
 </div>
-
+<p2 class="clue"><a href="{% url 'password_reset' %}">Забыли свой пароль?</a></p2>
 {% endblock content %}

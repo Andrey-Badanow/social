@@ -4,6 +4,8 @@
 
 
 {% block content %}
-<p>Некая информация о пользователе</p>
-{{ name }}
+<p class="base_text" >Некая информация о пользователе</p>
+<p class="base_text" >Здравствуйе, {{ name }}</p>
+
+<p><a href ="{% url "logout" %}">Выйти из системы</a></p>
 {% endblock content %}
