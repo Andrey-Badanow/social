@@ -4,21 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <linl rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/styles.css" %}">
     <title>{% block title %}{% endblock title %}</title>
 </head>
 <body>
-    {% if request.user.is_authenticated %}
+
     <div class="menu">
+        {% if request.user.is_authenticated %}
         <ul>
-            <li><a href="#">Главная</a></li>
+            <li><a href="{% url "main_page" %}">Главная</a></li>
             <li><a href="#">Люди</a></li>
             <li><a href="#">Медиа</a></li>
-            <li><a href="#">Настройки</a></li>
+            <li><a href="{% url "settings" %}">Настройки</a></li>
+            <a id="exit" href ="{% url "logout" %}">Выйти из системы</a>
         </ul>
+        {% else %}
+        <a id="exit" href ="{% url "login" %}">Войти</a>
+        {% endif %}
     </div>
-    {% endif %}
+
+
     {% block content %}
+
     {% endblock content %}
     
 </body>
