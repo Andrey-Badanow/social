@@ -1,0 +1,25 @@
+ul.menu {
+    /* Добавим фоновый цвет для нашего меню */
+    background: #33CCFF;
+    /* Выставим высоту */
+    height: 100px;
+    /* Уберем точки у li элементов */
+    list-style-type: none;
+    /* добавим отступ, чтобы крайние значения меню не были прижаты в плотную к границам меню */
+    padding: 10px;
+    /* Используем flexbox */  
+    display: flex;
+    justify-content: space-between;
+    /* Дополнительно сделаем вертикальное выравнивание */
+    align-items: center;
+  }
+
+a.menu{
+    text-decoration: none;
+    color: black;
+}
+
+a.menu:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
