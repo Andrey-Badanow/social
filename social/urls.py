@@ -17,7 +17,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from account import views
-from django.contrib.auth.views import PasswordChangeView
+#from django.contrib.auth.urls
 
 
 urlpatterns = [
@@ -25,4 +25,5 @@ urlpatterns = [
     path('', views.main_page, name='main_page'),
     path('settings/', views.settings, name='settings'),
     path('account/', include('django.contrib.auth.urls')),
+    path('registration/', views.Registration_new_user.as_view(), name='registration'),
 ]
