@@ -4,7 +4,9 @@
 
 
 {% block content %}
-<p class="base_text" >Некая информация о пользователе</p>
 <p class="base_text" >Здравствуйте, {{ user.get_username }}</p>
-
+<p>Информация о пользователе:</p>
+<p>Имя: {{ user.first_name }}</p>
+<p>Фамилия</p>
+<p>Место работы</p>
 {% endblock content %}
